@@ -9,8 +9,8 @@ RUN ["/bin/bash","-c","touch /eureka-service.jar"]
 ENV JAVA_HOME /jdk/jre
 ENV PATH $PATH:$JAVA_HOME/bin
 ENV CLASSPATH .:$JAVA_HOME/lib/rt.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
-#开放8761端口
-EXPOSE 8761
+#开放8762端口
+EXPOSE 8762
 #配置容器启动后执行的命令
 ENTRYPOINT ["java","-jar","/eureka-service.jar"]
 
